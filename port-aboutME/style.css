@@ -18,6 +18,11 @@
     flex-wrap: nowrap;
     
 }
+.body{
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
 .menu-superior-esquerdo {
     display: flex;
     gap: 24px;
@@ -142,6 +147,8 @@
 }
 .projetos {
     max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 .projetos h2 {
     font-size: 26px;
@@ -195,4 +202,49 @@
     margin-bottom: 20px;
 
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.card-feedback p {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+.sugestões {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.sugestões h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.caixa-nome {
+    width: 100%;            
+    max-width: 400px;  
+    padding: 10px;       
+    box-sizing: border-box;
+}
+
+.btn-enviar {
+    display: block;
+    margin: 20px auto;
+    background: #4A90E2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* efeito ao passar o mouse */
+.btn-enviar:hover {
+    background: #357ABD;
+    transform: scale(1.05);
+}
+
+/* efeito ao clicar */
+.btn-enviar:active {
+    transform: scale(0.97);
 }

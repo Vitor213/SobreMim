@@ -79,18 +79,26 @@
     <p class="card-feedback">"Vítor é um estudante dedicado e apaixonado por programação. Ele demonstra uma grande vontade de aprender e crescer na área de desenvolvimento de software." - Professor João Silva</p>
     <p class="card-feedback">"Trabalhar com Vítor em projetos acadêmicos foi uma experiência positiva. Ele é colaborativo e sempre busca soluções criativas para os desafios." - Colega de Classe Maria Oliveira</p>
   </section>
-  <section class="sujestões">
+  <section class="sugestões">
     <h2>Deixe uma sujestão no campo abaixo!</h2>
 
     <label for="nome"></label><br>
-    <input type="text" id="nome" name="nome" placeholder="Digite seu nome...(opcional)"><br><br>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome...(opcional)" class="caixa-nome"><br><br>
     <form action="#" method="post">
 
     <label for="sugestao">Sua Sugestão:</label><br>
-    <textarea id="sugestao" name="sugestao" rows="4" cols="50" placeholder="Escreva sua sugestão aqui..."></textarea><br>
-    <input type="submit" value="Enviar">
+    <textarea id="sugestao" name="sugestao" rows="4" cols="50" placeholder="sugestão..."></textarea><br>
+    <input type="submit" value="Enviar" class="btn-enviar" onclick="">
+
+    <p id="msg" style="display: none; color: green; font-weight: bold;"> Obrigado pela sua sugestão!</p>
     
   </section>
 </main>
+<script>
+    document.querySelector('.btn-enviar').addEventListener('click', function(event) {
+        event.preventDefault(); // Impede o envio do formulário
+        document.getElementById('msg').style.display = 'block'; // Exibe a mensagem de agradecimento
+    });
+</script>
 </body>
 </html>
