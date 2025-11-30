@@ -1,0 +1,201 @@
+/* ===== Media queries responsivas ===== */
+
+/* Tablets grandes / telas médios-grandes */
+@media (max-width: 1024px) {
+
+  .cabeça {
+    padding: 18px;
+  }
+
+  .menu-superior-esquerdo {
+    gap: 16px;
+    font-size: 0.95rem;
+  }
+
+  .menu-superior-direito ul {
+    gap: 14px;
+  }
+
+  .card {
+    height: auto;
+    padding: 18px;
+    gap: 18px;
+  }
+
+  .card__image {
+    max-width: 35%;
+  }
+
+  .card__content {
+    padding-left: 40px;
+  }
+
+  .skills-list {
+    gap: 18px;
+  }
+
+  .projetos-list {
+    gap: 18px;
+  }
+
+  .feedback,
+  .sugestões {
+    padding: 0 16px;
+  }
+}
+
+/* Tablets / Celulares maiores e paisagens */
+@media (max-width: 768px) {
+
+  /* Cabeçalho empilha */
+  .cabeça {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-superior-esquerdo {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .menu-superior-direito {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-superior-direito ul {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* Card vira coluna */
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    padding: 16px;
+  }
+
+  .card__image {
+    width: 180px;
+    max-width: 60%;
+    height: auto;
+  }
+
+  .card__image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card__content {
+    padding-left: 0;
+    padding-top: 12px;
+  }
+
+  /* Grid das habilidades */
+  .skills-list {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 14px;
+  }
+
+  /* Projetos */
+  .projetos-list {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .card-feedback {
+    padding: 14px;
+  }
+
+  /* Formulário */
+  .caixa-nome,
+  textarea {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .btn-enviar {
+    width: 80%;
+    max-width: 320px;
+    margin: 16px auto;
+  }
+
+  #msg {
+    margin-top: 8px;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+
+  .cabeça {
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .menu-superior-esquerdo a,
+  .menu-superior-direito a {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .card__image {
+    width: 140px;
+    max-width: 70%;
+  }
+
+  .card__content {
+    padding-top: 10px;
+    padding-left: 0;
+    line-height: 1.5;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 12px;
+  }
+
+  .projetos-list li,
+  .card-feedback {
+    padding: 12px;
+  }
+
+  .caixa-nome,
+  textarea {
+    font-size: 0.95rem;
+  }
+
+  .btn-enviar {
+    width: 90%;
+    max-width: 300px;
+    padding: 10px 16px;
+  }
+
+  .habilidades,
+  .projetos,
+  .feedback,
+  .sugestões,
+  .sobre {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

@@ -18,8 +18,15 @@
     flex-wrap: nowrap;
     
 }
+html{
+    scroll-behavior: smooth;
+}
 .body{
     max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.sobre{
     margin: 40px auto;
     padding: 0 20px;
 }
@@ -94,15 +101,18 @@
                         
 }
 .habilidades {
+    border: solid 2px transparent;
     max-width: 900px;
     margin: 40px auto;
-    padding: 0 20px;
+    padding: 10px 20px;
+    
 }
 
 .habilidades h2 {
     font-size: 26px;
     margin-bottom: 20px;
     color: #333;
+    
 }
 
 /* GRID bonitão */
@@ -247,4 +257,9 @@
 /* efeito ao clicar */
 .btn-enviar:active {
     transform: scale(0.97);
+}
+#msg-sujestao {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: inline-block;
 }

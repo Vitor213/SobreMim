@@ -6,6 +6,7 @@
     <title>Minha Página!</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="responsi.css">
 </head>
 <body>
     <header class="cabeça">
@@ -33,24 +34,29 @@
         <div    class="menu-superior-direito">
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutME/index.html">Sobre Mim</a></li>
-                    <li><a href="contact/index.html">Contato</a></li>
+                    <li><a href="#sobre-mim">Sobre Mim</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#feedback">Recomendações</a></li>
                 </ul>
             </nav>
         </div>
 </header>
     <main>
-  <div class="card">
-    <div class="card__image">
-      <img src="../dev-png.png" alt="Foto exemplo">
+  <section id="sobre-mim" class="sobre">
+    <div class="card">
+        <div class="card__image">
+            <img src="../dev-png.png" alt="Foto exemplo">
+        </div>
+
+        <div class="card__content">
+            <h2>Olá, eu sou Vítor!</h2>
+            <p>Sou estudante de Análise e Desenvolvimento de Sistemas, focado em evoluir na programação e construir projetos simples e funcionais. Gosto de aprender continuamente, explorar novas tecnologias e desenvolver soluções que agreguem valor. Estou iniciando minha carreira na área e busco sempre dar meu melhor em cada projeto.</p>
+        </div>
     </div>
-    <div class="card__content">
-      <h2>Olá, eu sou Vítor!</h2>
-      <p>Sou estudante de Análise e Desenvolvimento de Sistemas, focado em evoluir na programação e construir projetos simples e funcionais. Gosto de aprender continuamente, explorar novas tecnologias e desenvolver soluções que agreguem valor. Estou iniciando minha carreira na área e busco sempre dar meu melhor em cada projeto.</p>
-    </div>
-  </div>
-  <section class="Habilidades">
+</section>
+
+  <section class="Habilidades" id="habilidades">
     <h2>Habilidades</h2>
     <ul class="skills-list">
       <li><i class="fa-brands fa-html5"></i> HTML5</li>
@@ -74,23 +80,24 @@
       </li>
     </ul>
   </section>
-  <section class="feedback">
+  <section class="feedback" id="projetos">
     <h2>Recomendações</h2>
     <p class="card-feedback">"Vítor é um estudante dedicado e apaixonado por programação. Ele demonstra uma grande vontade de aprender e crescer na área de desenvolvimento de software." - Professor João Silva</p>
     <p class="card-feedback">"Trabalhar com Vítor em projetos acadêmicos foi uma experiência positiva. Ele é colaborativo e sempre busca soluções criativas para os desafios." - Colega de Classe Maria Oliveira</p>
   </section>
-  <section class="sugestões">
-    <h2>Deixe uma sujestão no campo abaixo!</h2>
+  <section class="sugestões" id="feedback">
+    <h2>Deixe uma recomendação no campo abaixo!</h2>
 
     <label for="nome"></label><br>
     <input type="text" id="nome" name="nome" placeholder="Digite seu nome...(opcional)" class="caixa-nome"><br><br>
     <form action="#" method="post">
 
-    <label for="sugestao">Sua Sugestão:</label><br>
+    <label for="sugestao" id="msg-sujestao">Sua Sugestão:</label><br>
     <textarea id="sugestao" name="sugestao" rows="4" cols="50" placeholder="sugestão..."></textarea><br>
-    <input type="submit" value="Enviar" class="btn-enviar" onclick="">
+    <input type="submit" value="Enviar" class="btn-enviar">
 
     <p id="msg" style="display: none; color: green; font-weight: bold;"> Obrigado pela sua sugestão!</p>
+    </form>
     
   </section>
 </main>
