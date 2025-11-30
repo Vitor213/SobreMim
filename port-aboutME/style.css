@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fa-html5 { color: #E44D26; }       /* Laranja HTML */
+.fa-css3 { color: #1572B6; }    /* Azul CSS */
+.fa-js { color: #F7DF1E; }          /* Amarelo JS */
+.fa-git { color: #F05033; }     /* Vermelho/laranja Git */
+.fa-bootstrap { color: #7952B3; } /* Roxo Bootstrap */
+
+.cabeça{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f8f8f8;
+    flex-wrap: nowrap;
+    
+}
+.menu-superior-esquerdo {
+    display: flex;
+    gap: 24px;
+    
+}
+.menu-superior-esquerdo a{
+    gap: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.menu-superior-esquerdo a:hover{
+    color: #007BFF; 
+    transform: translateY(-1px);
+}
+.menu-superior-direito {
+    display: flex;
+    align-items: center;
+}
+.menu-superior-direito ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.menu-superior-direito a{
+    display: inline-flex;
+    gap: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.menu-superior-direito a:hover{
+    color: #007BFF; 
+    transform: translateY(-1px);
+}
+.card{
+    display: flex;
+    align-items: center;       
+    gap: 24px;                 /* espaçamento entre os itens */
+    padding: 20px;
+    border: 1px solid #ddd;
+    height: 300px;
+    max-width: 100%;          
+    margin: auto;         
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.card__image{
+    flex-shrink: 0;
+    height: 100%;
+    width: auto;
+    max-width: 40%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.card__content{
+    flex: 1;
+    padding-left: 70px;
+    line-height: 1.6;
+                        
+}
+.habilidades {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.habilidades h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* GRID bonitão */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 20px;
+}
+
+/* Cada item vira um quadrado */
+.skills-list li {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    font-weight: 600;
+    color: #333;
+
+    transition: 0.2s ease;
+}
+
+.skills-list li i {
+    font-size: 32px;
+    
+}
+
+.skills-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    border-color: #ccc;
+}
