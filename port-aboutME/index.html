@@ -46,7 +46,7 @@
   <section id="sobre-mim" class="sobre">
     <div class="card">
         <div class="card__image">
-            <img src="../dev-png.png" alt="Foto exemplo">
+            <img src="../ooftpmrc6i31dsq4gscm9vjav3-9123c56a02642ce3b17d18bc543e70bb.png" alt="Foto exemplo">
         </div>
 
         <div class="card__content">
@@ -84,6 +84,9 @@
     <h2>Recomendações</h2>
     <p class="card-feedback">"Vítor é um estudante dedicado e apaixonado por programação. Ele demonstra uma grande vontade de aprender e crescer na área de desenvolvimento de software." - Professor João Silva</p>
     <p class="card-feedback">"Trabalhar com Vítor em projetos acadêmicos foi uma experiência positiva. Ele é colaborativo e sempre busca soluções criativas para os desafios." - Colega de Classe Maria Oliveira</p>
+    <p class="card-feedback">"Vítor é uma pessoa divertida e criativa, com grande potencial para se tornar um excelente desenvolvedor. Suas ideias inovadoras agregam muito ao time." - Amigo e Colega de Projeto</p>
+    <p class="card-feedback">"Vítor é um estudante dedicado e sempre busca aprender mais sobre programação. Sua paixão por tecnologia é evidente em seus projetos." - Mentor Ana Costa</p>
+    
   </section>
   <section class="sugestões" id="feedback">
     <h2>Deixe uma recomendação no campo abaixo!</h2>
@@ -100,12 +103,17 @@
     </form>
     
   </section>
+
+  <footer>
+    <p>&copy; 2025 Vítor Teixeira.</p>
+  </footer>
 </main>
 <script>
-    document.querySelector('.btn-enviar').addEventListener('click', function(event) {
-        event.preventDefault(); // Impede o envio do formulário
-        document.getElementById('msg').style.display = 'block'; // Exibe a mensagem de agradecimento
-    });
+document.querySelector('.btn-enviar').addEventListener('click', function(event) {
+    event.preventDefault();
+    alert("Obrigado pela sua sugestão!");
+});
 </script>
+
 </body>
 </html>
